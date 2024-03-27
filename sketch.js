@@ -31,7 +31,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1800, 1000);
+  let canvas = createCanvas(1800, 1000);
+
+  canvas.parent('project');
+
   bx = 1300;
   by = 200;
   background(240);
@@ -84,18 +87,18 @@ function draw() {
   // erase the board with slider
   rectMode(CORNER);
   noStroke();
-  fill(240, 01);
+  fill(240, 1);
 
   if (by > 240) {
     rect(80, 150, 1120, 770);
   }
 
-  fill(240, 04);
+  fill(240, 4);
   if (by > 550) {
     rect(80, 150, 1120, 770);
   }
 
-  fill(240, 07);
+  fill(240, 7);
   if (by > 680) {
     rect(80, 150, 1120, 770);
   }
